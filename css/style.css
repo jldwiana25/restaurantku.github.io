@@ -1,0 +1,230 @@
+@font-face{
+    font-family: lobster;
+    src: url('../assets/fonts/lobster.regular.ttf')
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+h1{
+    font-family: lobster;
+}
+.card-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-collapse ul{
+  margin: 0 2rem;
+}
+.navbar-collapse ul li{
+    padding: 10px;
+}
+.navbar-collapse ul li a{
+    color: white !important;
+}
+
+/* jumbotron */
+.jumbotron{
+    background-image: url('../assets/img/bg-1.png');
+    background-size: cover;
+    min-height: 540px;
+    position: relative;
+    color: white;
+    margin-top: -75px;
+}
+.jumbotron .banner_content{
+    margin-top: 150px;
+}
+.jumbotron .banner_content h2{
+    font-family: lobster;
+}
+.jumbotron .btn{
+    margin-top: 2rem;
+    padding: 5px 15px 5px 15px;
+}
+
+/*Coffe tubruk */
+.coffeetubruk{
+    min-height: 540px;
+}
+.font-coffee{
+    margin-top: 1rem;
+}
+.coffeetubruk.card-body h3{
+    font-size: 14pt;
+}
+.font-coffee p{
+    margin-top: 1rem;
+    color: rgb(138, 138, 138);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* Spesial Milk */
+.spesialmilk{
+    background-color:white;
+    background-size: cover;
+    min-height: 540px;
+}
+.card{
+    border: 0;
+    width: 250px;
+    align-content: center;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+}
+.card img{
+    border-radius:10px;
+}
+.card-body h3{
+    font-size: 14pt;
+}
+.font-spMenu{
+    margin-top: 0rem;
+}
+.font-spMenu h1{
+    color: black;
+}
+.font-spMenu p{
+    margin-top: 1rem;
+    color: rgb(138, 138, 138);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* ------------------------------------------------------------ *\
+	Form Reservation
+\* ------------------------------------------------------------ */
+
+.form-reservation { 
+    font-size: 10; 
+    line-height: 10; 
+    text-align: center;
+    justify-content: center;
+    align-content: center; 
+ }
+
+
+/* ------------------------------------------------------------ *\
+	Section Reservation
+\* ------------------------------------------------------------ */
+
+.hidden { 
+    display: none !important; 
+}
+
+.section-reservation .section-image { 
+    overflow: hidden;
+    height: 100%;
+    width: auto;
+}
+.section-reservation .section-inner {
+    padding: 180px 0; 
+    text-align: center; 
+}
+.section-reservation .section-inner h1 { 
+    margin-bottom: 10px; 
+    font-family: "Futura Std", sans-serif; 
+    font-size: 65px; 
+    line-height: 1; color: #aca9a9; 
+    font-weight: 700; 
+}
+.section-reservation .section-inner h6 { 
+    font-family: "Futura Std Book", sans-serif; 
+    font-size: 13px; 
+    letter-spacing: 0.11em; 
+    margin: -10px auto 100px; 
+}
+
+@media (max-width: 1600px) {
+	.section-reservation .section-image { 
+        height: 600px; 
+    }
+	.section-reservation .section-inner h1 { 
+        font-size: 62px; 
+    }
+	.section-reservation .section-inner h2 { 
+        font-size: 30px; 
+    }
+}
+
+@media (max-width: 1200px) {
+	.section-reservation .section-image { 
+        height: 500px; 
+    }
+}
+
+@media (max-width: 767px) {
+	.section-reservation .section-image { 
+        display: none; 
+    }
+	.section-reservation .section-inner { 
+        padding: 40px 0; 
+    }
+	.section-reservation .section-inner h1 { 
+        font-size: 33px; 
+    }
+	.section-reservation .section-inner h6 { 
+        margin-bottom: 30px; 
+    }
+}
+
+/* footer */
+footer{
+    background-image: url('../assets/img/bg-footer.jpg');
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    margin-top: 0;
+}
+.footer-judul{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+footer input[type=email]{
+    padding: 7px;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+}
+footer button{
+    background: orange;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    position: relative;
+    padding: 7px;
+    border: 0;
+    margin-left: -1rem;
+}
+.follow-us h5{
+    margin-bottom: 1rem;
+}
+.follow-us .fa-facebook{
+    padding: 20px 25px 20px 25px;
+    border-radius: 50px;
+    background: rgb(69, 0, 134);
+    margin-left: 0;
+}
+.follow-us .fa-twitter{
+    padding: 20px 20px 20px 20px;
+    border-radius: 50px;
+    background: rgb(29, 144, 221);
+    margin-left: 1rem;
+}
+.follow-us .fa-instagram{
+    padding: 20px 20px 20px 20px;
+    border-radius: 50px;
+    background: rgb(204, 32, 9);
+    margin-left: 1rem;
+}
+footer .fa{
+    color: white;
+    text-decoration: none;
+    font-size: 15pt;
+}

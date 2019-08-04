@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+                
+        .modal-content{
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            border: none;
+            z-index: 1;
+        }
+        .modal-content input{
+            width: 300px;
+            display: block;
+            margin: 15px auto;
+            border: none;
+            border-bottom: 1px solid rgb(88, 88, 88);
+            outline: none;
+            text-align: center;
+        }
+        .modal-header .close{
+            position: absolute;
+            top: 10px;
+            right: 14px;
+            font-size: 42px;
+            transform: rotate(45deg);
+            cursor: pointer;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .modal-header h4{
+            margin: auto;
+        }
+        .tombol {
+            background: #3498db;
+            color: #fff;
+            border: 0;
+            padding: 5px 8px;
+            border-bottom: none;
+            border: 0;
+        }
+
+    </style>
+
+    <title>ORDER NOW</title>
+  </head>
+  <body>
+    <!-- MODAL -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">+</button> <br>
+                    <h4 class="modal-title">Mayoo Na</h4> <br>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/hasselback-butternut-squash-BA-111616.jpg" alt="gbr" width="100" height="100">
+                    <form method="POST" action="order.html" onsubmit="return Validate()" name="vform">
+                        <p>Isikan Data data tersebut sebelum Order</p>
+                        <input type="text" name="nomeja" id="nomeja" placeholder="No Meja" required>
+                        <input type="text" name="nama" id="nama" placeholder="Name Anda" required>
+                        <input type="tel" name="tel" id="tel" placeholder="No Telephon" required>
+                        <input type="submit" value="Submit" class="tombol">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/order.js"></script>
+    <script>
+        $('#myModal').modal('show');
+    </script>
+    <script type="text/javascript">
+        function validasi() {
+            var nama = document.getElementById("nama").value;
+            var nomeja = document.getElementById("nomeja").value;
+            var tel = document.getElementById("tel").value;
+            if (nama != "" && nomeja!="" && tel !="") {
+                return true;
+            }else{
+                alert('Anda harus mengisi data dengan lengkap !');
+            }
+        }
+    </script>
+</body>
+</html>

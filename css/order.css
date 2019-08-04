@@ -1,0 +1,265 @@
+@font-face{
+    font-family: lobster;
+    src: url('../assets/fonts/lobster.regular.ttf')
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+h1{
+    font-family: lobster;
+}
+.card-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-collapse ul{
+  margin: 0 2rem;
+}
+.navbar-collapse ul li{
+    padding: 10px;
+}
+.navbar-collapse ul li a{
+    color: white !important;
+}
+
+/* Pop Up */
+/* .modal{
+    width: 100%;
+    height: 100%;
+    background: url('../assets/img/bg-1.png');
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.726), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+
+} */
+.modal-content{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border: none;
+    z-index: 1;
+}
+.modal-content input{
+    width: 300px;
+    display: block;
+    margin: 15px auto;
+    border: none;
+    border-bottom: 1px solid rgb(88, 88, 88);
+    outline: none;
+    text-align: center;
+}
+.modal-header .close{
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+.modal-header h4{
+    margin: auto;
+}
+.modal-body .btn{
+    margin-top: 1rem;
+}
+
+ /* Our Menu */
+.font-ourMenu{
+    margin-top: 3rem;
+}
+.ourmenu .card{
+    border: 0;
+    margin-bottom: 0rem;
+}
+.ourmenu .card-body{
+    background-color: rgba(228, 227, 227, 0.685);
+}
+.ourmenu .card-body .btn{
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    border: 1pt solid #999;
+}
+.ourmenu .card-body .btn:hover{
+    background-color: #ffbc13;
+    color: white;
+    border: 1pt solid#ffbc13;
+}
+.ourmenu .card-body .card-text {
+    font-style: italic;
+} 
+.ourmenu h3{
+    margin-top: 1rem;
+    float: left;
+    margin-left: 2rem;
+
+}
+
+
+#ourM{
+    background-color: white;
+  }
+  .card{
+    background-color: white;
+    padding: 5px;
+    margin-top: 3rem;
+    position: relative;
+    display: block;
+  }
+  .ourmenu .owl-prev, 
+  .ourmenu .owl-next{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    background-image: linear-gradient(-45deg,rgba(97, 212, 203, 0.8) 0,rgba(12, 151, 151, 0.8) 40%,rgba(13, 107, 114, 0.8) 100%);
+    position: absolute;
+    outline: none;
+  }
+  .ourmenu .owl-prev{
+    left: 0;
+    bottom: 0px;
+  }
+  .ourmenu .owl-next{
+    right: 0;
+    bottom: 0px;
+  }
+  .pemesanan{
+      align-content: center;
+      justify-content: center;
+      margin: auto;
+  }
+  .pemesanan button{
+      width: 30px;
+      outline-color: none;
+  }
+  .pemesanan input{
+      margin: 0 5px 0 5px;
+      width: 75px;
+  }
+
+
+/* bayarr */
+.bayar a{
+    float: right;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Pop Up */
+.bg-popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.747);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.popup-content{
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.popup-content input{
+    width: 250px;
+    display: block;
+    margin: 15px auto;
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    background-image: url('../assets/img/bg-footer.jpg');
+    background-size: cover;
+    color: white;
+    min-height: 350px;
+    margin-top: 0;
+}
+.footer-judul{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+footer input[type=email]{
+    padding: 7px;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+}
+footer button{
+    background: orange;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    position: relative;
+    padding: 7px;
+    border: 0;
+    margin-left: -1rem;
+}
+.follow-us h5{
+    margin-bottom: 1rem;
+}
+.follow-us .fa-facebook{
+    padding: 20px 25px 20px 25px;
+    border-radius: 50px;
+    background: rgb(69, 0, 134);
+    margin-left: 0;
+}
+.follow-us .fa-twitter{
+    padding: 20px 20px 20px 20px;
+    border-radius: 50px;
+    background: rgb(29, 144, 221);
+    margin-left: 1rem;
+}
+.follow-us .fa-instagram{
+    padding: 20px 20px 20px 20px;
+    border-radius: 50px;
+    background: rgb(204, 32, 9);
+    margin-left: 1rem;
+}
+footer .fa{
+    color: white;
+    text-decoration: none;
+    font-size: 15pt;
+}

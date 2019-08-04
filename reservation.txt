@@ -1,0 +1,111 @@
+
+    <!-- RESERVATIONNN -->
+    <section class="section section-reservation nav-item" id="reservation">
+        <div class="section section-image">
+          <figure>
+            <img src="/cmsb/uploads/reservation.jpg" alt="" />
+          </figure>
+        </div><!-- /.section-image -->
+    </section><!-- /.section section-press -->
+    
+    <section class="section section-reservation nav-item" id="reservation2">
+        <div class="section-inner fullscreen-image-container">
+            <img src="css/images/bg.jpg" class="fullscreen-image" alt="" />
+            <header class="section-head">
+                <h1>MAKE A RESERVATION</h1>
+                <h6>POWERED BY OPENTABLE</h6>
+            </header><!-- /.section-head -->
+            <div class="section-body">
+                <div class="form-reservation">
+                    <form method="get" id="OT_form" action="http://www.opentable.com/restaurant-search.aspx" target="_blank">
+                        <div class="form-row">
+                            <label for="field-date" class="form-label">
+                                <i class="sprite-ico-calendar"></i>
+                            </label>
+                            <div class="form-controls">
+                                <input type="text" id="datepicker" name="startDate" class="field" autocomplete="off">
+                            </div><!-- /.form-controls -->
+                        </div><!-- /.form-row -->    
+                        <div class="form-row">
+                            <label for="field-hour" class="form-label">
+                                <i class="sprite-ico-clock"></i>
+                            </label>
+                            <div class="form-controls">
+                                <div class="select">
+                                    <select name="ResTime">
+                                        <option value="6:30 AM" >6:30 AM</option>
+                                        <option value="7:00 AM" >7:00 AM</option>
+                                        <option value="7:30 AM" >7:30 AM</option>
+                                        <option value="8:00 AM" >8:00 AM</option>
+                                        <option value="8:30 AM" >8:30 AM</option>
+                                        <option value="9:00 AM" >9:00 AM</option>
+                                        <option value="9:30 AM" >9:30 AM</option>
+                                        <option value="10:00 AM" >10:00 AM</option>
+                                        <option value="10:30 AM" >10:30 AM</option>
+                                        <option value="11:00 AM" >11:00 AM</option>
+                                        <option value="11:30 AM" >11:30 AM</option>
+                                        <option value="12:00 PM" >12:00 PM</option>
+                                        <option value="12:30 PM" >12:30 PM</option>
+                                        <option value="1:00 PM" >1:00 PM</option>
+                                        <option value="1:30 PM" >1:30 PM</option>
+                                        <option value="2:00 PM" >2:00 PM</option>
+                                        <option value="2:30 PM" >2:30 PM</option>
+                                        <option value="3:00 PM" >3:00 PM</option>
+                                        <option value="3:30 PM" >3:30 PM</option>
+                                        <option value="4:00 PM" >4:00 PM</option>
+                                        <option value="4:30 PM" >4:30 PM</option>
+                                        <option value="5:00 PM" >5:00 PM</option>
+                                        <option value="5:30 PM" >5:30 PM</option>
+                                        <option value="6:00 PM" >6:00 PM</option>
+                                        <option value="6:30 PM" >6:30 PM</option>
+                                        <option value="7:00 PM" selected>7:00 PM</option>
+                                        <option value="7:30 PM" >7:30 PM</option>
+                                        <option value="8:00 PM" >8:00 PM</option>
+                                        <option value="8:30 PM" >8:30 PM</option>
+                                        <option value="9:00 PM" >9:00 PM</option>
+                                        <option value="9:30 PM" >9:30 PM</option>
+                                        <option value="10:00 PM" >10:00 PM</option>
+                                    </select>
+                                </div><!-- /.select -->
+                            </div><!-- /.form-controls -->
+                        </div><!-- /.form-row -->
+                        <div class="form-row">
+                            <label for="field-persons" class="form-label">
+                                <i class="sprite-ico-person"></i>
+                            </label>
+                            <div class="form-controls">
+                                <div class="select">
+                                    <select name="PartySize" id="field-persons">
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                    </select>
+                                </div><!-- /.select -->
+                            </div><!-- /.form-controls -->
+                        </div><!-- /.form-row -->
+                        <div class="form-actions">
+                            <input type="hidden" name="RestaurantID" id="RestaurantID" value="51610"><input type="hidden" name="rid" id="rid" value="51610"><input type="hidden" name="GeoID" id="GeoID" value="74"><input type="hidden" name="txtDateFormat" id="txtDateFormat" value="MM\/dd\/yyyy"><input type="hidden" name="RestaurantReferralID" id="RestaurantReferralID" value="51610">
+                            <input type="submit" value="FIND A TABLE" class="btn btn-white" />
+                        </div><!-- /.form-actions -->
+                    </form>
+                </div><!-- /.form-reservation -->
+            </div><!-- /.section-body -->
+        </div><!-- /.section-inner -->
+    </section><!-- /.section section-reservation -->
