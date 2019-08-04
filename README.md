@@ -1,1 +1,1 @@
-# Restaurantku.github.io
+# restaurantku.github.io
